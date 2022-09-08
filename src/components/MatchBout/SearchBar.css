@@ -1,0 +1,172 @@
+h2 {
+    padding: 20px
+}
+
+h3 {
+    padding: 20px;
+}
+
+.display-fighters {
+    font-size: 2em;
+    font-weight: 500;
+    padding: 20px;
+}
+
+/* .search-body { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #F53844, #42378F);
+    height: 100vh;
+} */
+
+.search-input-box input {
+    height: 45px;
+    font-size: 16px;
+    width: 100%;
+    border: .5px solid grey;
+    border-radius: 5px;
+}
+
+.results {
+    margin-top: 5px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.results .data-item {
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+    height: 50px;
+    font-size: 1.5em;
+    height: 2em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+
+}
+.select-fighter{
+    transition: .3s;
+}
+.select-fighter:hover {
+    background: rgb(192, 192, 192);
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+.fight-request-body {
+    display: flex;
+    max-width: 60%;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    background:  rgba(192, 192, 192, 0.9);
+    margin: -300px 0 0 -125px;
+    border: 3px solid grey;
+    position: absolute;  
+    z-index: 1000;
+    border-radius: 15px;
+    color: #fff;
+    padding: 25px 30px;
+}
+
+@media (max-width: 500px){
+    .fight-request-body{
+        max-width: 80%;
+    }
+    .fight-request-container {
+        height: 100%;
+        max-width: 100%;
+
+    }
+    form .fight-user-info .fight-input-box{
+        margin: 15px;
+        width: 100vw;
+    }
+    .fight-request-body{
+        height: 50%;
+    }
+}
+
+.fight-request-container {
+    width: 60%;
+    height: 65%;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 25px 30px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 5px solid black
+}
+
+.fight-request-container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.fight-request-container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    border-radius: 10px;
+    background: linear-gradient(#647DEE, #7F53AC)
+}
+
+.fight-request-container form .fight-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .fight-user-info .fight-input-box{
+    margin: 5px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.fight-user-info .fight-input-box .request-details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.fight-user-info .fight-input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.request-button {
+    height: 45px;
+    margin: 20px 0;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(135deg, #647DEE, #7F53AC);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+

@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+ 
+
+.footer-container {
+    background: linear-gradient(-300deg, #5E5368, #000000);
+    height: 30vh;
+    margin-top: 5px;
+}
+
+li a , li a:visited , li a:hover, li a:active {
+    text-decoration: none;
+    color: silver;
+    
+}
+
+.link-tag {
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.logout-button{
+    margin: 15px 0;
+    padding: 20px 45px;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media (max-width: 390px){
+    .footer-container {
+        bottom: 0;
+        background: linear-gradient(300deg,#5E5368, #000000);
+    }
+}
+
+
+
+
+
