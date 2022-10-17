@@ -5,35 +5,35 @@ li {
     padding: 15px 15px;
 }
 
-.welcome-heading{
+/* .welcome-heading{
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 2px;
     font-family: 'Bebas Neue', cursive;
-    padding: 10px -100px;
-}
+    /* padding: 10px -100px; 
+} */
 
 .nav-bar-container {
-    background: linear-gradient(300deg,#5E5368, #000000);
-    height: 100px;
+    /* background: linear-gradient(300deg,#5E5368, #000000); */
+    height: 150px;
 }
 
-.nav-bar-button {
+/* .nav-bar-button {
     margin: 0 100px
-}
+} */
 
 .bld-font {
     font-weight: 700;
 }
 
 .btn-left {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    /* border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; */
 }
 
 .btn-right {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; */
 }
 
 @media (max-width: 777px){

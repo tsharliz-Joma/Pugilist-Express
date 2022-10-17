@@ -1,7 +1,6 @@
 
 
 .sparring-search-body {
-    display: flex;
     height: 100vh;
     max-width: 100%;
     justify-content: center;
@@ -11,17 +10,17 @@
 
 .sparring-container {
     background: #fff;
-    width: 50%;
-    margin: 20px 0;
-    padding: 60px 30px;
+    margin-top: 30px;
+    padding: 20px 20px;
     border-radius: 5px;
-    max-height: 100%;
-    border: 5px solid #1E3B70;
-    border-radius: 25px;
+    height: 250px;
+    border: 1.5px solid silver;
+    border-radius: 5px;
+    width: 30%;
 }
 
 .sparring-container .sparring-title {
-    font-size: 3em;
+    font-size: 1.75em;
     margin-bottom: 5px;
     font-weight: 500;
     position: relative;

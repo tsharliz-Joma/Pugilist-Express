@@ -1,24 +1,63 @@
 
 .carousel-container {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .landing-body {
     /* height: 100%;
     width: 100%; */
-    margin: 50px 0 0 0;
+    /* margin: 50px 0 0 0; */
+    overflow-x: hidden;
 }
 
 .img-container {
-    height: 500px;
+    height: 800px;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px;
 }
 
 img {
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
 }
+
+.weight-division-div {
+    margin-top: 200px;
+    height: 500px;
+    font-size: 1.3em;
+}
+
+.upcoming-fights-div {
+    height: 600px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.tournament-card {
+    /* border: 3px solid darkblue; */
+    
+}
+
+.enquiry-container {
+    height: 600px;
+    margin-top: 300px;
+}
+
+.tournaments-div {
+   margin-top: 300px;
+   
+}
+
+/* .input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+} */
 
 @media (max-width: 390px) {
     img {

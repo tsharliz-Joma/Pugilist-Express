@@ -39,9 +39,9 @@ const Login = () => {
     return(
         <div className='container login-form-body'>
             <div className='login-form-container'>
-                <div className='login-title'>Login</div>
+                <div className='login-title mono-text'>Login</div>
                 <form onSubmit={ login }>
-                    <div className='login-user-info'>
+                    <div className='login-user-info font-monospace'>
                         <div className='login-input-box'>
                             <label htmlFor="email" className='login-details'>Email:
                                 <input onChange={(e) => setEmail(e.target.value)}
@@ -55,9 +55,9 @@ const Login = () => {
                             </label>
                         </div>
                     </div>
-                    <button className='login-button btn btn-secondary' >Login</button>
+                    <button className='login-button btn-secondary mono-text' >Login</button>
                 </form> 
-                <Link to="/" className='btn btn-dark' >
+                <Link to="/" className='nav-link mono-text ' >
                     Home
                 </Link>
             </div>

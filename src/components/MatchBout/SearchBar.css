@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.font-mono {
+    font-family: 'Monoton', cursive;
+}
 h2 {
     padding: 20px
 }
@@ -6,11 +11,13 @@ h3 {
     padding: 20px;
 }
 
-.display-fighters {
+/* .display-fighters {
     font-size: 2em;
     font-weight: 500;
-    padding: 20px;
-}
+    
+} */
+
+
 
 /* .search-body { 
     display: flex;
@@ -30,13 +37,13 @@ h3 {
 }
 
 .results {
-    margin-top: 5px;
-    height: 200px;
+    margin-top: 15px;
+    height: 400px;
     border-radius: 5px;
-    border: 1px solid #000000;
+    
     box-shadow: rgba(0, 0, 0, 0.35);
     overflow: hidden;
-    overflow-y: auto;
+    
 }
 
 .results .data-item {
@@ -45,7 +52,6 @@ h3 {
     text-decoration: none;
     height: 50px;
     font-size: 1.5em;
-    height: 2em;
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -56,26 +62,29 @@ a {
 }
 .select-fighter{
     transition: .3s;
+    font-family: 'Monoton', cursive;
 }
 .select-fighter:hover {
     background: rgb(192, 192, 192);
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 5px;
     border: 3px solid rgb(0, 0, 0);
-    width: 100%;
+    width: 50%;
 }
 
 .fight-request-body {
-    display: flex;
-    max-width: 60%;
+    display: inline-flex;
+    max-width: 50%;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 60%;
     background:  rgba(192, 192, 192, 0.9);
-    margin: -300px 0 0 -125px;
+    margin: -300px 0 0 -250px;
+    
     border: 3px solid grey;
     position: absolute;  
     z-index: 1000;
-    border-radius: 15px;
+    border-radius: 5px;
     color: #fff;
     padding: 25px 30px;
 }
@@ -100,8 +109,8 @@ a {
 
 .fight-request-container {
     width: 60%;
-    height: 65%;
-    border-radius: 15px;
+    height: 100%;
+    border-radius: 5px;
     margin: 20px 0;
     padding: 25px 30px;
     background: rgba(0, 0, 0, 0.9);

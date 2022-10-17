@@ -5,11 +5,6 @@ import _ from 'underscore'
 import './SearchBar.css'
 
 
-
-
-
-
-
 const SearchBar = (placeholder) => {
 
     const fighterCollectionRef = collection(db, 'Fighters'); 

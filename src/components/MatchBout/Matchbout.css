@@ -1,31 +1,61 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 .bout-search-body {
-    display: flex;
-    height: 100vh;
-    max-width: 100%;
+    display: inline-block;
+    height: 100%;
+    min-width: 100%;
     justify-content: center;
     align-items: center;
     background: linear-gradient(#F53844, #42378F);
 }
 
-.nav-container {
+
+@media screen and (max-width: 3000px){
+    .bout-search-body {
+        height: 100vh;
+    }
+}
+
+.results-display-div {
+    height: 500px;
     
+    margin: 20px 0;
+    padding: 20px 30px;
+    border-radius: 5px;
+    
+    width: 50%;
+    overflow-y: scroll;
+}
+
+input[type=text]{
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus{
+    width: 80%;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
 .bout-container {
     background: #fff;
-    width: 50%;
-    margin: 20px 0;
-    padding: 60px 50px;
+    margin-top: 30px;
+    padding: 20px 20px;
     border-radius: 5px;
-    max-height: 100%;
-    border: 5px solid #42378F;
-    border-radius: 25px;
+    height: 250px;
+    border: 1.5px solid silver;
+    border-radius: 5px;
+    width: 30%;
+}
+
+footer {
+    height: 100px;
 }
 
 .bout-container .bout-title {
-    font-size: 3em;
+    font-size: 1.75em;
     margin-bottom: 5px;
     font-weight: 500;
     position: relative;
@@ -42,19 +72,8 @@
 }
 
 .home-button {
-    margin: 20px 0;
-    padding: 13px 30px;
-    letter-spacing: 2px ;
-    font-weight: 500;
+    /* margin: 100px 0;  */
 }
-
-/* @media ( max-width: 390px ){
-    .bout-container{
-        padding: 30px 0;
-        width: 100%;
-        height: 65%;
-    }
-} */
 
 @media ( max-width: 500px){
     .bout-container{

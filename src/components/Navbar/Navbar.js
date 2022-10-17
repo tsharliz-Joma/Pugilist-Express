@@ -11,7 +11,7 @@ const NavBar = () => {
 
     const [ loggedIn, setLogin ] = useState(
         <div className="nav-button-container">
-            <Link to='login' className="btn-left btn btn-dark">
+            <Link to='login' className="btn-left btn btn-dark nav-button-container">
                 Login
             </Link>
         </div>
@@ -19,7 +19,7 @@ const NavBar = () => {
 
     const [ register, setRegistration ] = useState(
         <div className="nav-button-container">
-            <Link to='signup' className="btn-right btn btn-dark">
+            <Link to='signup' className="btn-right btn btn-dark nav-button-container">
                 Register
             </Link>
         </div>
@@ -32,6 +32,7 @@ useEffect(() => {
     onAuthStateChanged( auth, (currentUser) => {
         if(currentUser){
             setUser(currentUser)
+            console.log(currentUser)
             setLogin(
                 <div className="nav-button-container">
                     <Link to='match-bout' className="nav-bar-button btn btn-light bld-font">
@@ -56,7 +57,7 @@ useEffect(() => {
             { loggedIn }
             <div className="text-center text-white welcome-heading">
                 Welcome<br/>
-                --{user.email}--
+                --{ user.email }--
             </div>
             { register }
         </nav>

@@ -8,12 +8,16 @@
     background: linear-gradient(#647DEE, #7F53AC);
 }
 
+.font-mono {
+    font-family: 'Monoton', cursive;
+}
+
 .form-container {
     max-width: 50%;
     max-height: 100%;
     margin: 20px 0;
     background: #fff ;
-    padding: 25px 30px;
+    padding: 25px 30px; 
     border-radius: 5px;
 }
 
@@ -21,6 +25,7 @@
     font-size: 25px;
     font-weight: 500;
     position: relative;
+    font-family: 'Monoton', cursive;
 }
 
 .form-container .title::before {
