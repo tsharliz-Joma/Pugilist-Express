@@ -9,13 +9,42 @@
     
 }
 
+@keyframes slide {
+    from {}
+    to {justify-content: flex-end;}
+}
+
 .landing-page-title {
     font-size: 4em;
     font-weight: 600;
     margin: 100px 0;
     font-family: 'Monoton', cursive;
     letter-spacing: 3px;
+    overflow: hidden;
+    
 }
+
+.landing-inner-title {
+    display: flex;
+    justify-content: space-around;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%
+    }
+  }
+
+
 
 
 .mono-text {

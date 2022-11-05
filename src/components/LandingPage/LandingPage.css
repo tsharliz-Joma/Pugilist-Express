@@ -2,6 +2,7 @@
 .carousel-container {
     width: 100%;
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 .landing-body {
@@ -23,41 +24,70 @@ form input {
 img {
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+    
 }
 
 .weight-division-div {
-    margin-top: 200px;
+   
     height: 500px;
     font-size: 1.3em;
+    display: flex;
+    justify-content: space-around;
 }
 
-.upcoming-fights-div {
-    height: 600px;
+.weight-div-item {
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.tournaments-div {
+   max-width: 10000px;
+   overflow-x: scroll;
+ }
+
+.tournaments-inner-div::-webkit-scrollbar {
+    display: none;
+}
+
+ .tournaments-inner-div {
+    height: 100%;
+    width: auto;
     font-size: 1.3em;
     font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto!important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .tournament-card {
-    /* border: 3px solid darkblue; */
-    
+    width: 550px;
+    height: 800px;
+    margin: 0 10px;
+    padding:0 30px;
+    flex: 0 0 auto;
 }
+
+.card-img {
+    height: 300px;
+}
+
 
 .enquiry-container {
     height: 600px;
     margin-top: 300px;
 }
 
-.tournaments-div {
-   margin-top: 300px;
-   
-}
 
-/* .input-container {
-    width: 650px;
-    max-width: 100%;
-    margin: 20px auto 25px auto;
-} */
+.rankings-div {
+    width: 85%;
+    margin: 200px auto;
+    
+}
 
 @media (max-width: 390px) {
     img {

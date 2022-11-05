@@ -114,6 +114,7 @@ const LandingPage = () => {
         })
     }, [])
 
+
     return(
     
     <div className='landing-body'>
@@ -122,7 +123,11 @@ const LandingPage = () => {
        { LoggedInNav }
 
 
-        <div className='landing-page-title text-center'>Pugilist Express</div>
+        <div className='landing-page-title text-center'>
+            <div className='landing-inner-title'>
+                <span>Pugilist Express</span>
+            </div>
+        </div>
 
             <div className='carousel-container'>
 
@@ -165,9 +170,16 @@ const LandingPage = () => {
             </Carousel>
             </div>
 
-            <div className='container rankings-div pt-5 mt-5'>
-                <div className='row weight-division-div font-monospace '>
-                    <div className='col bg-light '>
+            
+            <div className='rankings-div '>
+
+                <div className='row-fluid pt-5 my-5'>
+                    <div className='text-center fs-1 font-monospace fw-bolder bg-light '>Current Rankings</div>
+                </div>
+
+                <div className='weight-division-div font-monospace'>
+
+                    <div className=' bg-light weight-div-item'>
                         <div className="text-center fs-3 bg-dark text-white">Heavyweight</div>
                         <ul className="pt-5 text-start">
                             <li className="d-block text-center"><GiCrown color={'gold'} /> Bakhodir Jalolov </li>
@@ -177,7 +189,7 @@ const LandingPage = () => {
                             <li className="d-block">5. Yaroslav Doronichev </li>
                         </ul>
                     </div>
-                    <div className='col mx-5 bg-light'>
+                    <div className='bg-light weight-div-item'>
                         <div className="text-center fs-3 bg-dark text-white">Middleweight</div>
                         <ul className="pt-5 text-start">
                             <li className="d-block text-center"><GiCrown color={'gold'}/> Oleksandr Khyzhniak </li>
@@ -187,7 +199,7 @@ const LandingPage = () => {
                             <li className="d-block">5. Dzhambulat Bizhamov </li>
                         </ul>
                     </div>
-                    <div className='col bg-light'>
+                    <div className=' bg-light weight-div-item'>
                         <div className="text-center fs-3 bg-dark text-white">Welterweight</div>
                         <ul className="pt-5 text-start">
                             <li className="d-block text-center"><GiCrown color={'gold'}/> Aslanbek Shymbergenov </li>
@@ -199,8 +211,8 @@ const LandingPage = () => {
                     </div>
                 </div>
                 
-                <div className='row my-5 weight-division-div font-monospace '>
-                    <div className='col-lg-4 bg-light mx-auto'>
+                <div className='weight-division-div font-monospace '>
+                    <div className='bg-light weight-div-item'>
                         <div className="text-center fs-3 bg-dark text-white">Lighweight</div>
                         <ul className="pt-5 text-start">
                             <li className="d-block text-center"><GiCrown color={'gold'}/> Andy Cruz </li>
@@ -211,7 +223,7 @@ const LandingPage = () => {
                         </ul>
                     </div>
                     
-                    <div className='col-lg-4 bg-light mx-auto'>
+                    <div className='bg-light weight-div-item'>
                         <div className="text-center fs-3 bg-dark text-white">Featherweight</div>
                         <ul className="pt-5 text-start">
                             <li className="d-block text-center"><GiCrown color={'gold'}/> Shakhobidin Zoirov </li>
@@ -222,84 +234,87 @@ const LandingPage = () => {
                         </ul>
                     </div>
                 </div>
-                {/*  5 Div's With a title of the weight division */}
-                {/* On click , it displays the top 5 fighters within that divison */}
+
             </div>
 
-            <div className='container-fluid tournaments-div'>
-                <div className='row pt-3 '>
-                    <div className='text-center fs-1 font-monospace fw-bolder mb-5 bg-light'>Upcoming Tournaments</div>
-                </div>
-                <div className='row row-cols-1 upcoming-fights-div mt-5'>
-                    <div className='col-3 rounded tournament-card'>
-                        <Card className=' h-100 position-relative rounded border-dark'>
+            <div className='row pt-3 '>
+                <div className='text-center fs-1 font-monospace fw-bolder mb-5 bg-light'>Upcoming Tournaments</div>
+            </div>
+
+            <div className='tournaments-div'>
+
+                <div className='tournaments-inner-div mt-5'>
+
+                    <div className='rounded tournament-card'>
+                        <Card className=' h-100 rounded border-dark'>
                             <Card.Body className='pb-0'>
                                 <Card.Title className='text-center card-title text-white bg-dark fs-3 mono-text'>Lionel Rose Cup</Card.Title>
                                 <div className='text-center font-monospace my-5'>
                                     <div className='my-5 fw-bolder'>Lional Rose Cup</div>
                                     <div>10 Action Packed Championship Fights</div>
-                                    <div><img src={Caesars} /></div>
-                                    <div>At the center of the Mecca of Boxing/</div>
+                                    <div className='card-img'><img src={Caesars} /></div>
+                                    <div className=''>At the center of the Mecca of Boxing/</div>
                                 </div>
                             </Card.Body>
-                                <Card.Footer className='border-0 text-center'>
+                                <Card.Footer className='text-center'>
                                     <p> July 30th </p>
                                     <p> Caesar's Palace </p>
                                 </Card.Footer>
                         </Card>
-                            
                     </div>
-                    <div className='col-3 rounded tournament-card'>
-                            <Card className='h-100 position-relative rounded border-dark'>
+                    
+                    <div className='rounded tournament-card'>
+                            <Card className='h-100 rounded border-dark'>
                                 <Card.Body className='pb-0'>
                                     <Card.Title className='text-center text-white bg-dark fs-3 mono-text'>Match Bouts</Card.Title>
                                     <div className='text-center font-monospace my-5'>
                                         <div className='my-5 fw-bolder'>Ali Boxing Cup</div>
                                         <div>45 Bouts to determine the pecking order.</div>
-                                        <div><img src={Wembly} /></div>
-                                        <div>Serena Isnt here but someone is sure to get served</div>
+                                        <div className='card-img'><img src={Wembly} /></div>
+                                        <div className=''>Serena Isnt here but someone is sure to get served</div>
                                     </div>
                                 </Card.Body>
-                                <Card.Footer className='text-center border-0'>
+                                <Card.Footer className='text-center'>
                                     <p> June 23rd </p>
                                     <p> Wembly Stadium </p>
                                 </Card.Footer>
                             </Card>
                     </div>
-                    <div className='col-3 rounded tournament-card'>
-                        <Card className='h-100 position-relative rounded border-dark'>
-                            <Card.Body className='pb-0'>
+                    <div className='rounded tournament-card'>
+                        <Card className='h-100 rounded border-dark'>
+                            <Card.Body className=''>
                             <Card.Title className='text-center text-white bg-dark fs-3 mono-text'>Johnny Famachan Cup</Card.Title>
-                            <div className='text-center font-monospace my-5'>
+                            <div className='text-center font-monospace'>
                                 <p className='my-5 fw-bolder'>Johnny Famachan Cup</p>
                                 <div>12 Firebattle Fights, Who is Number 1?</div>
-                                <div><img src={MGM}/></div>
+                                <div className='card-img'><img src={MGM}/></div>
                                 <div>They say what happens in vegas stays in Vegas </div>
                             </div>
                             </Card.Body>
-                            <Card.Footer className='text-center border-0'>
+                            <Card.Footer className='text-center'>
                                 <p> November 6th </p>
                                 <p> MGM Grand </p>
                             </Card.Footer>
                         </Card>
                     </div>
-                    <div className='col-3 rounded tournament-card'>
-                        <Card className='h-100 position-relative rounded border-dark'>
-                            <Card.Body className='pb-0'>
+                    <div className='rounded tournament-card'>
+                        <Card className='h-100 rounded border-dark'>
+                            <Card.Body className=''>
                             <Card.Title className='text-center text-white bg-dark fs-3 mono-text'>Australian Titles</Card.Title>
-                            <div className='text-center font-monospace my-5'>
+                            <div className='text-center font-monospace '>
                                 <div className='my-5 fw-bolder'>Australian Titles</div>
-                                <div>The Austrlian Amatuer Titles are up for grabs.</div>
-                                <img src={RodLaver} />
-                                <div>Who will dominate and destroy?.</div>
+                                <div>Austrlian Amatuer Titles are up for grabs.</div>
+                                <div className='card-img'><img src={RodLaver} /></div>
+                                <div className='my-auto' >Who will dominate and destroy?.</div>
                             </div>
                             </Card.Body>
-                            <Card.Footer className='text-center border-0'>
+                            <Card.Footer className='text-center'>
                                 <p> October 25th </p>
                                 <p> Rod Laver Arena </p>
                             </Card.Footer>
                         </Card>
                     </div>
+ 
                 </div>
             </div>
 
